@@ -1,0 +1,17 @@
+Compile and run a C++ code
+
+ 
+
+For compiling and running a CPP program in Linux following are the command lines:
+
+Compile: g++ Filename.cpp
+Run or execute: ./a.out
+
+ 
+
+ 
+
+For compiling and running a CPP program in Windows following are the command lines:
+
+Compile: gcc Filename.cpp
+Run or execute: filename
