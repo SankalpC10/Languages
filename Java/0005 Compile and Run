@@ -1,0 +1,12 @@
+Compile and run Java programs
+
+Below are the steps to compile and run your first java program
+
+    Open a text editor like notepad or notepad++.
+    Write a java program in your text editor and save it with (.java extension), remember that the file name and the class name must be the same.
+    For example, if you are creating a class HelloWorld, then you need to save it with HelloWorld.java.
+    Open your command prompt.
+    Set the directory where your java program is saved.
+    Once you enter the directory where your java program is saved, now it’s time to compile your java program,
+    to compile the java program use the command javac HelloWorld.java (In this case my java file is HelloWorld.java).
+    Once your Java program compiles fine, now it’s time to run your java program. You can run your java program by using java HelloWorld (java file_Name) command.
