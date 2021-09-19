@@ -8,7 +8,8 @@ It can be used to develop operating systems, browsers, games, and so on. This ma
 
  
 
-For this course, you will be provided with the in-built compiler of Coding Ninjas. However, if you want to run programs and practice them on your local desktop, various compilers like Code blocks, VS Code, Dev C++, Atom, and many more exist. You may choose one for yourself.
+For this course, you will be provided with the in-built compiler of Coding Ninjas. However, if you want to run programs and practice them on your local desktop,
+various compilers like Code blocks, VS Code, Dev C++, Atom, and many more exist. You may choose one for yourself.
  
 Features of C++
 
@@ -38,7 +39,8 @@ It allows us to follow both procedural as well as functional approach to design 
  
 
 2) Portability: It is the concept of carrying the instruction from one system to another system. In C++, Language .cpp file contains source code, and 
-we can also edit this code .exe file contains the application, which is the only file that can be executed. When we write and compile any C++ program on the Windows operating system, it efficiently runs on other window-based systems.
+we can also edit this code .exe file contains the application, which is the only file that can be executed. When we write and compile any C++ program on the Windows operating
+system, it efficiently runs on other window-based systems.
 
  
 
