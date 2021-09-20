@@ -69,4 +69,116 @@ UnboundLocalError: local variable 'x' referenced before assignment
 
  
 
-This happens because, when the command x=x-1, is interpreted, Python treats this x as a local variable and we have not defined any local variable x inside the function foo().
+This happens because, when the command x=x-1, is interpreted, Python treats this x as a local variable and we have not defined any local variable x inside
+the function foo().
+
+Local Scope:
+
+ 
+
+The variables which are defined inside a function body have a local scope. This implies that local variables can be accessed only inside the function in which they are declared.
+
+ 
+Creating a Local Variable
+
+ 
+
+We declare a local variable inside a function. Consider the given function definition:
+
+ 
+
+def func():
+    name = "Shivam Kumar Singh"
+	print(name)
+
+func()
+
+ 
+
+We get the output as:
+
+ 
+
+Shivam Kumar Singh
+
+ 
+Accessing A Local Variable Outside The Scope
+
+ 
+
+def func():
+    name = "Shivam Kumar Singh"
+
+func()
+print(name)
+
+ 
+
+In the above code, we declared a local variable y inside the function foo(), and then we tried to access it from outside the function. We get the output as:
+
+ 
+
+NameError: name 'name' is not defined
+
+ 
+
+We get an error because the lifetime of a local variable is the function it is defined in.
+
+ 
+
+Outside the function, the variable does not exist and cannot be accessed. In other words, a variable cannot be accessed outside its scope.
+
+ 
+The Lifetime of a Variable
+
+ 
+
+The time for which the variable exists in memory is called the lifetime of that variable:
+
+       ● The lifetime of a Global variable is the entire program run (i.e., they live in the
+
+          memory as long as the program is being executed).
+
+       ● The lifetime of a Local variable is their function’s run (i.e., as long as their function
+
+           is being executed).
+ Global Variable And Local Variable With The Same Name
+
+ 
+
+Consider the code given:
+
+ 
+
+val = 1 
+def func():
+  val = 50
+  print("Value of Local variable:", val)
+ 
+func() 
+print("Value of Global Variable:", val)
+
+ 
+
+In this, we have declared a global variable val = 1 outside the function func(). Now, we re-declared a local variable inside the function func() with the same name val.
+Now, we try to print the values of val, inside, and outside the function. We observe the following output:
+
+ 
+
+Value of Local variable:: 50
+Value of Global variable:: 1
+
+ 
+
+In the above code,  both global and local variables have the same name val. On printing the value of val we get a different result, because the variables
+have been declared in different scopes, i.e., the local scope inside func() and global scope outside func().
+
+ 
+
+When we print the value of the variable inside func() it outputs Value of Local variable: 10. This is the local scope of the variable. In the local scope, 
+it prints the value that it has been assigned inside the function.
+
+ 
+
+Similarly, when we print the variable outside func(), it outputs Value of Global variable: 5. This is the global scope of the variable, and the value of the
+global variable val is printed.
