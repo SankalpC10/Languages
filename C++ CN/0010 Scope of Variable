@@ -15,7 +15,8 @@ There are mainly two types of variable scopes:
 
  
 
-Variables declared within the body of a function or block are said to have local scope and are referred to as ‘local variables’. They can be used only by the statements inside the body of the function or the block they are declared within.
+Variables declared within the body of a function or block are said to have local scope and are referred to as ‘local variables’. They can be used only by the statements
+inside the body of the function or the block they are declared within.
 
  
 
