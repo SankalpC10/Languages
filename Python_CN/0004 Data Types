@@ -1,0 +1,85 @@
+Data types are the classification or categorization of data items. Data types represent a kind of value that determines what operations can be performed on that data.
+Numeric, non-numeric, and Boolean (true/false) data are the most used data types. However, each programming language has its classification largely reflecting its 
+programming philosophy. Python offers the following built-in data types:
+
+ 
+
+● Numbers 
+
+        ○ Integers 
+
+        ○ Floating Point Numbers 
+
+        ○ Complex Numbers
+
+● Strings 
+
+● Boolean Values 
+
+● List, Tuple, and Dictionary
+
+ 
+
+ 
+
+ 
+
+Note:- If a variable has been assigned a value of some data type, It can be reassigned as a value belonging to some other Data Type in the future.
+
+ 
+
+a= "Raw" # String Data Type 
+a= 10 # Integer Data Type 
+a= 5.6 # Floating Point Number Data Type 
+a= 1+8j # Complex Number 
+a= True # Boolean Value
+
+ 
+Introduction to Python Numbers
+
+ 
+
+Number data types store numerical values. Python supports Integers(defined as int), floating-point numbers(defined as float), and complex numbers(complex classes).
+
+ 
+
+● Integers can be of any length (Only limited by the memory available). They do have a decimal point and can be positive or negative.
+
+● A floating-point number is a number having a fractional part. The presence of a decimal point indicates a floating-point number. They have a precision of up to
+15 digits.      
+
+● 1 is an integer, 1.0 is a floating-point number.
+
+● Complex numbers have an imaginary part and are of the form, x + yj (where x is the real part and y is the imaginary part).
+
+ 
+
+To know which class a variable belongs to we can use the type() function. Similarly, you can use the instance() function to check if an object belongs to a 
+particular class.
+
+Here are a few examples:-
+
+ 
+
+b = 5 
+print(b, "is of type", type(b)) 
+b = 2.0 
+print(b, "is of type", type(b)) 
+b = 1+2j 
+print(b, "is complex number?", isinstance(b,complex))
+
+ 
+
+And we will get the output as:
+
+ 
+
+5 is of type <class ‘int’> 
+
+ 
+
+2.0 is of type <class ‘float’> 
+
+ 
+
+1+2j is a complex number? True 
