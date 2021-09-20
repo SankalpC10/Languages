@@ -1,0 +1,10 @@
+Variables naming Convention in Java
+
+    1.A variable name should be short and meaningful.
+    2.It should begin with a lowercase letter.
+    3.It can begin with special characters such as _ (underscore) and $ (dollar) sign.
+   4.If the variable name contains multiple words, then use the camel case, i.e. variable name should start with a lowercase letter followed by an uppercase letter.
+    For eg: codingNinja, camelCase.
+    5.Always try to avoid single character variable names such as i, j, and k except for the temporary variables.
+    6.A variable name can not contain whitespaces.
+    7.We can’t use keywords(pre-defined literals) as the variable names.
