@@ -76,7 +76,8 @@ Local Scope:
 
  
 
-The variables which are defined inside a function body have a local scope. This implies that local variables can be accessed only inside the function in which they are declared.
+The variables which are defined inside a function body have a local scope. This implies that local variables can be accessed only inside the function
+in which they are declared.
 
  
 Creating a Local Variable
