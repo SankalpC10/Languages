@@ -1,0 +1,224 @@
+In Java, there are mainly two ways to get input from the user:
+
+ 
+
+    Using Scanner class
+    Using BufferedReader class
+
+ 
+
+1. Using Scanner class: Scanner is a class in java that is used to take input from the user. It is present in the java.util package.
+Scanner class is one of the most preferable ways to take input from the user. This class is used to read the input of primitive types such as int, double,
+long, etc., and some non-primitive(wrapper class objects) types such as String, Boolean, etc. You need to import the java.util package before using the Scanner class.
+
+ 
+
+ 
+Methods of Scanner class in Java:
+
+ 
+
+Java Scanner class provides various methods to read different primitive data types from the user.
+
+ 
+Method	                     Description
+nextInt()	             reads an int value from the user.
+nextFloat()	           reads a float value from the user.
+nextDouble()	         reads a double value from the user.
+nextLong()	           reads a long value from the user.
+nextShort()	           reads a short value from the user.
+nextByte()	           reads a byte value from the user.
+nextBoolean()  	       reads a boolean value from the user.
+nextLine()	           reads a line of text from the user.
+next()	               reads a word from the user.
+
+ 
+
+ 
+
+Example 1: Taking int value from the user
+
+ 
+
+import java.util.Scanner;
+public class TakingInputFromUser {
+
+	public static void main(String args[]) {            	
+	
+		// Creating an object of Scanner class
+		Scanner sc = new Scanner(System.in);
+		
+		// Read integer value from the user
+		System.out.println(“Enter first number :”);
+		int a = sc.nextInt();
+		
+		System.out.println(“Enter second number :”);
+		int b = sc.nextInt();
+		
+		// Adding two values
+		int c = a + b;
+		
+		// Printing the sum
+		System.out.println(“Sum is : “ +c);
+		
+	}
+}
+
+ 
+
+Output:
+
+ 
+
+Enter first number : 10
+Enter second number : 20
+Sum is : 30
+
+ 
+
+ 
+
+Example 2: Taking String from the user
+
+ 
+
+import.java.util.Scanner;
+public class TakingInputFromUser {
+      public static void main(String args[]) {
+             Scanner sc = new Scanner(System.in);
+             System.out.println(“Enter a String : “);
+             // Read a string from the user
+             String str = sc.nextLine();
+             System.out.println(“Your entered string is : “ + str);
+    }
+}
+
+ 
+
+Output:
+
+ 
+
+Enter a String : Coding Ninjas
+Your entered string is : Coding Ninjas
+
+ 
+
+ 
+
+Example 3: Taking char from the user
+
+ 
+
+To read a character from the user, we use next().charAt(0). The next() function of the Scanner class returns the next token/words in the input as a String
+and charAt(0) function returns the first character in that String.
+
+ 
+
+import.java.util.Scanner;
+public class TakingInputFromUser {
+      public static void main(String args[]) {
+             Scanner sc = new Scanner(System.in);
+             System.out.println(“Enter a character : “);
+             // Read a char from the user
+             char ch = sc.next().charAt(0);
+             System.out.println(“Your entered character is : “ + ch);
+    }
+}
+
+ 
+
+Output:
+
+ 
+
+Enter a character : C
+Your entered character is : C
+
+ 
+
+ 
+
+Example 4: Taking double from the user
+ 
+
+import.java.util.Scanner;
+public class TakingInputFromUser {
+      public static void main(String args[]) {
+             Scanner sc = new Scanner(System.in);
+             System.out.println(“Enter a double value : “);
+             // Read a double value from the user
+             double d = sc.nextDouble();
+             System.out.println(“Your entered value is : “ + d);
+    }
+}
+
+ 
+
+Output:
+
+ 
+
+Enter a double value : 10.0
+Your entered value is : 10.0
+
+ 
+
+If you want to take long, short, and float values from the user, then you can use nextLong(), nextShort(), and nextFloat() methods of Scanner class respectively.
+
+ 
+
+ 
+
+ 
+
+2. Using BufferedReader class: 
+
+ 
+
+Java BufferedReader class is used to read the stream of characters from the character input stream. The read() and readLine() method of BufferedReader
+class is mainly used to read and return the characters.
+
+ 
+
+Example:
+
+ 
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader 
+
+
+public class TakingInputFromUser {
+      public static void main(String arg[]) throws IOException {
+
+
+             // Taking input using BufferedReader
+             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+
+             // Reading input using readLine()
+             String name = reader.readLine();
+
+
+             // Printing the input 
+             System.out.println(name);
+    }
+}
+
+ 
+
+Input:
+
+ 
+
+Coding Ninjas
+
+ 
+
+Output:
+
+ 
+
+Coding Ninjas
